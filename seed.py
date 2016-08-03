@@ -46,7 +46,7 @@ def load_movies():
         row = row.split("|")
         movie_id = row[0] 
         movie_title = row[1]
-        movie_title_no_year = movie_title[:-6]
+        movie_title_no_year = movie_title[:-7]
         release_date = row[2]
         imdb_url = row[4]
 
