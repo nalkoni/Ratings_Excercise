@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Login</h2>
+
+
+<form class="login" action='/login_form' method="POST">
+    <label>Email*:<input id="user_email" type="text" name="email"></input></label><br><br>
+    <label>Password*:<input id="user_password" type="text" name="password"></input></label><br><br>
+    <label><input id="btn_submit" type="submit"></input><label>
+</form>
+<br><br>
+     <a href="/templates/adduser.html">Create Account</a>
+
+
+
+
+
+<script>
+
+
+</script>
+{% endblock %}
