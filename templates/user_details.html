@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{ user_found.email }}</h1>
+
+<ul>
+    {% if users %}
+    <ul>
+        <li>{{ user_found.age }}</li>
+        <li>{{ user_found.zipcode }}</li>
+        
+
+    </ul>
+
+    <li>
+        <a href="/users/{{ user.user_id }}">
+            {{ user.email }}({{ user.user_id }})
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Create Your Account</h1>
+
+<form class="account" action='/create_account' method="POST">
+    <label>Email*:<input id="user_email" type="text" name="email" maxlength="64"></input></label><br><br>
+    <label>Password*:<input id="user_password" type="text" name="password" maxlength="64"></input></label><br><br>
+    <label>Age*:<input id="user_age" type="text" name="age"></input></label><br><br>
+    <label>Zipcode*:<input id="user_zipcode" type="text" name="zipcode" maxlength="15"></input></label><br><br>
+    <label><input id="btn_create" type="submit"></input><label>
+</form>
+
+
+
+
+{% endblock %}
